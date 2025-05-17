@@ -37,11 +37,13 @@
     "dotenv": "^16.4.7",
     "drizzle-orm": "^0.40.0",
     "framer-motion": "^12.4.10",
+    "install": "^0.13.0",
     "jose": "^6.0.11",
     "lucide-react": "^0.479.0",
     "minio": "^8.0.5",
     "motion": "^12.4.10",
     "next": "15.2.2-canary.5",
+    "npm": "^11.4.0",
     "pg": "^8.14.0",
     "postgres": "^3.4.5",
     "react": "^19.0.0",
@@ -50,6 +52,7 @@
     "react-hook-form": "^7.54.2",
     "tailwind-merge": "^3.0.2",
     "tailwindcss-animate": "^1.0.7",
+    "uuid": "^11.1.0",
     "zod": "^3.24.2"
   },
   "devDependencies": {

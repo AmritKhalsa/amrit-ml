@@ -100,13 +100,13 @@ export async function login(state: LoginFormState | undefined, formData: FormDat
     if (user.length === 0) {
         return { errors: { email: ['Email not found'] }, cred: { email: email, password: password }  }
     }
-    
     if (bcrypt.compareSync(password, user[0].password)) {
         await createSession(user[0].id)
         const session = await verifySession();
         if (session === null) {
             return { message:  'Failed to create user session' , cred: { email: email, password: password } }
         }
+        
         return { message: 'Login successful', cred: { email: '', password: '' } };
     } else {
         return { errors: { password: ['Incorrect Password'] }, cred: { email: email, password: password } };

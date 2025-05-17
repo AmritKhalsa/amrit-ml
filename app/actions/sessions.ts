@@ -26,7 +26,9 @@ export async function decrypt(session: string) {
   }
 }
 export async function createSession(userId: number){
+    console.log("yes3")
     const jwt = await encrypt({ userId: userId })
+    console.log("yes3")
     const cookieStore = await cookies()
     cookieStore.set('session', jwt, {
         httpOnly: true,
